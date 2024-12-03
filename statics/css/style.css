@@ -1,0 +1,23 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,legend,button,form,fieldset,input,textarea,p,blockquote,th,td{padding: 0; margin: 0; }
+ol,ul{list-style: none; }
+h1,h2,h3,h4,h5,h6{font-weight: normal; font-size: 100%; }
+a{text-decoration: none; }
+.fl{float: left; }
+.fr{float: right; }
+.tac{text-align: center; }
+.tal{text-align: left; }
+
+body{background: #0e0e0e url('../images/background.jpg') no-repeat center; color: #222; font-size: 14px; margin-top: 5px; font-family: Arial;  display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+.tv, .main{position: relative;}
+.tv, .main, .tv img, .main img{max-width: 92vw; max-height: 92vh; object-fit: cover}
+.click-here{position: absolute; top: 64%; left: 40%; transform: translate(-50%, -50%); cursor: pointer; transition: all 0.3s ease; }
+.click-here:hover{filter: brightness(2);}
+.click-here:active{filter: brightness(3);}
+.preload, .preload img{width: 0; height: 0; overflow: hidden;}
+
+@media (min-width: 600px) and (max-width: 699px) {.click-here img {width: 110px;}}
+@media (min-width: 500px) and (max-width: 599px) {.click-here img {width: 95px;}}
+@media (min-width: 400px) and (max-width: 499px) {.click-here img {width: 75px;}}
+@media (min-width: 300px) and (max-width: 399px) {.click-here img {width: 60px;}}
+@media (min-width: 200px) and (max-width: 299px) {.click-here img {width: 40px;}}
+@media (max-width: 199px) {.click-here img {width: 20px;}}
